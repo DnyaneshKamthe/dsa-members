@@ -7,7 +7,7 @@ export default function Navbar() {
   // const auth = useAuth()
   return (
     <div>
-      <Flex  gap={{base:"1rem" , sm:"2rem", md:"4rem", lg:"8rem"}} justifyContent="space-between">
+      <Flex  gap={{base:"1rem" , sm:"2rem", md:"4rem", lg:"8rem"}} justifyContent="space-between" w="100vw" mr="1rem">
         <Box boxSize="100px" mt="1rem" ml="2rem" bg="white">
           <Image src="LOGO.svg" alt="Logo" />
         </Box>
@@ -16,7 +16,7 @@ export default function Navbar() {
             
             <Heading as="h1" color="white">Dashboard</Heading>
             <Spacer/>
-            <HStack spacing="10px">
+            <HStack spacing="10px" mr="1rem">
                 <Avatar name='Dan Abrahmov' src='user.png' />
                 {/* <Text color="white">{auth.user.userName}</Text> */}
                 <Box bg="white" borderRadius="50px" w="50px" h="50px"><Icon as={BsBell} mx="1em" my="1em" /></Box>
